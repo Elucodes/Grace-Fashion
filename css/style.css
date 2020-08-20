@@ -1,0 +1,340 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+
+}
+
+
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+/* To move the nav to the right*/
+nav{
+	flex:1;
+	text-align: right;
+}
+/* To move the bullets to the side where there is ul and remove the bullets*/
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+/* To make the li to be in horizontal form and margin-to add space between them*/
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/* To remove the lines at the bottom of a*/
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/* max-width- wont go more than that, margin-auto, to be at the centre*/
+header{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	background: radial-gradient(#B0C4DE,#E6E6FA);
+	font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+header .highlight, header .current a{
+  color: #D2691e;
+  font-weight: bold;
+}
+
+.row{
+	display: flex;
+	align-items:center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+
+}
+
+.col-2 img
+{
+	max-width: 100%;
+	padding:50px 0;
+}
+
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+
+.btn{
+	display: inline-block;
+	background: #D2691e;
+	color: black;
+	padding:8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+
+}
+
+.btn:hover{
+	background:#F5F5DC;
+}
+
+header .row{
+	margin-top: 40px;
+}
+
+.categories{
+	margin: 70px 0;
+}
+
+.col-3 img{
+	width: 100%;}
+
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;  
+}
+
+#none{
+	max-width: 1080px; 
+	margin: auto;
+	padding-left: 25px;
+}
+
+
+.col-4{
+	flex-basis: 25%;
+	padding:10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition:transform 0.5s;
+}
+
+.col-4 img{
+	width: 100%;
+}
+
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	
+	line-height: 60px; 
+}
+ 
+ .title::after{
+ 	content:'';
+ 	background: #D2691e;
+ 	width:80px;
+ 	height: 5px;
+ 	border-radius: 5px;
+ 	position: absolute;
+ 	bottom: 0;
+ 	left:50%;
+ 	transform:translateX(-50%);
+ }
+
+ h4{
+ 	color:#555;
+ 	font-weight: normal;
+ }
+
+ .col-4{
+ 	font-size: 14px;
+ }
+
+ .rating{
+ 	color:#ff523b;
+ }
+
+ .col-4:hover{
+ 	transform: translateY(-5px);
+ }
+ 
+
+
+ .offer{
+ 	background: radial-gradient(#B0C4DE,#E6E6FA);
+ 	margin-top: 80px;
+ 	padding: 30px 0; 
+ }
+
+ .col-2 .offer-img{
+ 	padding:70px;
+ } 
+
+small{
+	color:#555;
+}
+
+.testimonial{
+	padding-top: 100px;
+	
+}
+
+.testimonial .col-3{
+	text-align: center;
+	padding: 40px 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	cursor:pointer;
+	transition: transform 0.5s;
+
+}
+
+
+.testimonial .col-3 img{
+	width:50px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+	transform: translateY(-10px);
+}
+
+ .fa-quote-left{
+ 	font-size: 34px;
+ 	color:#D2691e;
+ }
+
+ .col-3 p{
+ 	font-size:12px;
+ 	margin:12px 0;
+ 	color:#777;
+
+ }
+
+ .testimonial .col-3 h3{
+ 	font-weight: 600;
+ 	color:#555;
+ 	font-size: 16px;
+ }
+
+ footer{
+ 	text-align: center;
+ 	background: black;
+ 	color:#D2691e;
+ 	 padding: 2px;
+  margin-top: 10px;
+ }
+
+header #cart{
+	margin-left: 20px;
+}
+
+
+header #icon{
+font-size: 1.4rem;
+margin-left: 20px;
+	color: #D2691e;	
+	display: none;
+}
+ /*media query*/
+ @media only screen and (max-width: 800px){
+
+ 	nav ul{
+ 		position: absolute;
+ 		top: 70px;
+ 		left:0;
+ 		background:#333;
+ 		width:100%;
+ 		overflow: hidden;
+ 		transition: max-height 0.5s;
+ 	}
+
+ 	nav ul li{
+ 		display: block;
+ 		margin-right: 50px;
+ 		margin-top:10px;
+ 		margin-bottom:10px;
+ 	}
+
+ 	nav ul li a{
+ 		color: white;
+ 	}
+
+ 	header #icon{
+ 		display: block;
+ 		cursor: pointer;
+ 	}
+
+ }
+
+
+  @media only screen and (max-width: 800px){
+  	.row{
+  		text-align: center;
+  	}
+  	.col-2, .col-3, .col-4{
+  		flex-basis: 100%;
+  		
+  	}
+  }
+
+
+/*
+
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;  
+}
+. col-3 img{
+	width: 100%;
+}
+
+#none{
+	
+	margin: auto;
+	padding-left: 25px;
+}
+
+
+
+/*
+. col-3 img{
+	width: 100%;
+}
+
+#none{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+}
+
+/*header .navbar{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:  wrap;
+	justify-content: space-between;
+	}
+
+	header a{
+		text-decoration: none;
+	}
+
+	header ul{
+	list-style-type: none;
+	display: flex;
+}
+
+header li{
+	margin-right: 20px;
+}
